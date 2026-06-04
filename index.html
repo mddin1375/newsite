@@ -5,182 +5,127 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Din Islam Portfolio</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
+<link rel="stylesheet" href="style.css">
 
-body{
-    background:#0f172a;
-    color:white;
-    line-height:1.6;
-}
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    background:#111827;
-    position:sticky;
-    top:0;
-}
-
-.logo{
-    font-size:24px;
-    font-weight:bold;
-    color:#38bdf8;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-}
-
-nav ul li{
-    margin-left:20px;
-}
-
-nav ul li a{
-    color:white;
-    text-decoration:none;
-}
-
-.hero{
-    text-align:center;
-    padding:100px 20px;
-}
-
-.hero img{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    border:4px solid #38bdf8;
-    margin-bottom:20px;
-}
-
-.hero h1{
-    font-size:50px;
-}
-
-.hero span{
-    color:#38bdf8;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    background:#38bdf8;
-    color:white;
-    padding:12px 25px;
-    border-radius:8px;
-    text-decoration:none;
-}
-
-section{
-    padding:80px 10%;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:40px;
-    color:#38bdf8;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#1e293b;
-    padding:25px;
-    border-radius:12px;
-}
-
-.skill{
-    margin-bottom:20px;
-}
-
-.progress{
-    background:#334155;
-    height:10px;
-    border-radius:20px;
-}
-
-.progress div{
-    height:10px;
-    border-radius:20px;
-    background:#38bdf8;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#111827;
-}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <nav>
-<div class="logo">Din Islam</div>
+    <div class="logo">DIN.</div>
 
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a href="#contact" class="nav-btn">Hire Me</a>
 </nav>
 
-<section class="hero">
+<section class="hero" id="home">
 
-<img src="https://via.placeholder.com/180" alt="Profile">
+<div class="hero-left">
 
-<h1>Hi, I'm <span>Din Islam</span></h1>
+<span class="small-title">
+Digital Marketing Expert
+</span>
 
-<p>Digital Marketer | Meta Ads Specialist | Tracking Expert</p>
+<h1>
+Grow Your <span>Business</span><br>
+With Smart Marketing
+</h1>
 
-<a href="#contact" class="btn">Contact Me</a>
+<p>
+Helping brands scale with Meta Ads,
+Tracking Setup and Website Development.
+</p>
+
+<div class="hero-buttons">
+<a href="#" class="btn">Get Started</a>
+<a href="#" class="btn-outline">Portfolio</a>
+</div>
+
+<div class="stats">
+
+<div>
+<h2>100+</h2>
+<p>Projects</p>
+</div>
+
+<div>
+<h2>50+</h2>
+<p>Clients</p>
+</div>
+
+<div>
+<h2>5+</h2>
+<p>Years</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="orange-box"></div>
+
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=700" alt="profile">
+
+</div>
 
 </section>
 
-<section id="about">
+<section class="about" id="about">
 
 <h2 class="section-title">About Me</h2>
 
-<p style="text-align:center;">
-I help businesses grow through Meta Ads, Tracking Systems,
-Lead Generation and Website Development.
+<p>
+I help businesses generate leads, increase sales and
+build scalable marketing systems.
 </p>
 
 </section>
 
-<section id="services">
+<section class="services" id="services">
 
 <h2 class="section-title">Services</h2>
 
-<div class="cards">
+<div class="service-grid">
 
 <div class="card">
 <h3>Meta Ads</h3>
-<p>Facebook & Instagram Advertising Campaigns.</p>
+<p>Facebook & Instagram Advertising.</p>
 </div>
 
 <div class="card">
-<h3>Tracking Setup</h3>
-<p>Meta Pixel, GTM, GA4 and Conversion API.</p>
+<h3>GA4 & GTM</h3>
+<p>Analytics & Tracking Setup.</p>
 </div>
 
 <div class="card">
-<h3>Website Development</h3>
-<p>Landing Pages, WordPress and Shopify.</p>
+<h3>Conversion API</h3>
+<p>Server Side Tracking.</p>
+</div>
+
+<div class="card">
+<h3>Website Design</h3>
+<p>Modern Responsive Websites.</p>
+</div>
+
+<div class="card">
+<h3>Lead Generation</h3>
+<p>High Quality Leads.</p>
+</div>
+
+<div class="card">
+<h3>SEO</h3>
+<p>Search Engine Optimization.</p>
 </div>
 
 </div>
@@ -191,44 +136,31 @@ Lead Generation and Website Development.
 
 <h2 class="section-title">Portfolio</h2>
 
-<div class="cards">
+<div class="portfolio-grid">
 
-<div class="card">
-<h3>Client Project #1</h3>
-<p>E-commerce Tracking Setup</p>
-</div>
-
-<div class="card">
-<h3>Client Project #2</h3>
-<p>Lead Generation Campaign</p>
-</div>
-
-<div class="card">
-<h3>Client Project #3</h3>
-<p>WordPress Business Website</p>
-</div>
+<div class="portfolio-item"></div>
+<div class="portfolio-item"></div>
+<div class="portfolio-item"></div>
+<div class="portfolio-item"></div>
+<div class="portfolio-item"></div>
+<div class="portfolio-item"></div>
 
 </div>
 
 </section>
 
-<section>
+<section class="testimonial">
 
-<h2 class="section-title">Skills</h2>
+<h2 class="section-title">Testimonials</h2>
 
-<div class="skill">
-<p>Meta Ads - 95%</p>
-<div class="progress"><div style="width:95%"></div></div>
-</div>
+<div class="testimonial-box">
 
-<div class="skill">
-<p>Google Tag Manager - 90%</p>
-<div class="progress"><div style="width:90%"></div></div>
-</div>
+<p>
+"Outstanding service. Highly recommended."
+</p>
 
-<div class="skill">
-<p>GA4 - 88%</p>
-<div class="progress"><div style="width:88%"></div></div>
+<h4>John Doe</h4>
+
 </div>
 
 </section>
@@ -237,21 +169,31 @@ Lead Generation and Website Development.
 
 <h2 class="section-title">Contact</h2>
 
-<p style="text-align:center;">
-📧 your@email.com
-<br><br>
-📱 +8801XXXXXXXXX
-<br><br>
-🌐 www.yourwebsite.com
-</p>
+<form>
+
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<input type="text" placeholder="Subject">
+
+<textarea placeholder="Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
 
 </section>
 
 <footer>
 
-<p>© 2026 Din Islam. All Rights Reserved.</p>
+<h3>Din Islam</h3>
+
+<p>
+Digital Marketer | Tracking Specialist
+</p>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
