@@ -1,35 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Din Islam Agency</title>
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            text-align:center;
-            padding-top:100px;
-            background:#f5f5f5;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Din Islam Portfolio</title>
 
-        h1{
-            color:#1877f2;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-        .btn{
-            background:#1877f2;
-            color:white;
-            padding:12px 25px;
-            text-decoration:none;
-            border-radius:8px;
-        }
-    </style>
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:#111827;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:4px solid #38bdf8;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#38bdf8;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+}
+
+.skill{
+    margin-bottom:20px;
+}
+
+.progress{
+    background:#334155;
+    height:10px;
+    border-radius:20px;
+}
+
+.progress div{
+    height:10px;
+    border-radius:20px;
+    background:#38bdf8;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111827;
+}
+</style>
 </head>
+
 <body>
 
-<h1>Welcome To My Agency</h1>
+<nav>
+<div class="logo">Din Islam</div>
 
-<p>Digital Marketing | Website Development | Tracking Setup</p>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 
-<a class="btn" href="#">Contact Us</a>
+<section class="hero">
+
+<img src="https://via.placeholder.com/180" alt="Profile">
+
+<h1>Hi, I'm <span>Din Islam</span></h1>
+
+<p>Digital Marketer | Meta Ads Specialist | Tracking Expert</p>
+
+<a href="#contact" class="btn">Contact Me</a>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<p style="text-align:center;">
+I help businesses grow through Meta Ads, Tracking Systems,
+Lead Generation and Website Development.
+</p>
+
+</section>
+
+<section id="services">
+
+<h2 class="section-title">Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Meta Ads</h3>
+<p>Facebook & Instagram Advertising Campaigns.</p>
+</div>
+
+<div class="card">
+<h3>Tracking Setup</h3>
+<p>Meta Pixel, GTM, GA4 and Conversion API.</p>
+</div>
+
+<div class="card">
+<h3>Website Development</h3>
+<p>Landing Pages, WordPress and Shopify.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2 class="section-title">Portfolio</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Client Project #1</h3>
+<p>E-commerce Tracking Setup</p>
+</div>
+
+<div class="card">
+<h3>Client Project #2</h3>
+<p>Lead Generation Campaign</p>
+</div>
+
+<div class="card">
+<h3>Client Project #3</h3>
+<p>WordPress Business Website</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skill">
+<p>Meta Ads - 95%</p>
+<div class="progress"><div style="width:95%"></div></div>
+</div>
+
+<div class="skill">
+<p>Google Tag Manager - 90%</p>
+<div class="progress"><div style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<p>GA4 - 88%</p>
+<div class="progress"><div style="width:88%"></div></div>
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p style="text-align:center;">
+📧 your@email.com
+<br><br>
+📱 +8801XXXXXXXXX
+<br><br>
+🌐 www.yourwebsite.com
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Din Islam. All Rights Reserved.</p>
+
+</footer>
 
 </body>
 </html>
